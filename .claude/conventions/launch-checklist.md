@@ -49,4 +49,9 @@ Dingen die makkelijk vergeten worden maar juridisch, ethisch of qua toegankelijk
 
 _Noteer hier tijdens het werk punten die vóór oplevering nog geregeld moeten worden. Leeg = niets bekend, niet = alles gedaan; loop de lijst hierboven altijd volledig na._
 
-- (nog niets)
+- **Wachtlijst-API ontbreekt**: het formulier POST naar `api/waitlist` (`src/Config/waitlist.ts`), maar die endpoint bestaat nog niet. Nodig: API (bv. .NET zoals WaterZacht), opslag, bevestigings-/afmeldmail met één-klik uitschrijflink, verwerkersovereenkomst met de maildienst. Tot dan toont het formulier een foutmelding.
+- **Privacyverklaring is een concept** (`PrivacyDialog.tsx`): bewaartermijn, maildienst en grondslag laten controleren door de eigenaar. Contactadres ontbreekt (`privacyContactEmail` staat op `null`).
+- **Bedrijfsgegevens** (bedrijfsnaam, KvK, adres, e-mail) van Vexaro ontbreken; nog nergens op de pagina.
+- **Beeldmateriaal**: productbeeld is 406×214 px en wordt opgeschaald; hi-res productfoto's nodig. Rechten op het beeld bevestigen. VEXARO-logo als vector ontbreekt (nu als platte tekst).
+- **Productinfo**: inhoud van de doos (de verpakking noemt "25 cl can"), veiligheidsinformatie en eventuele wettelijke vermeldingen laten bevestigen door de klant.
+- **Favicon/OG-beeld**: nog de baseline-placeholder.

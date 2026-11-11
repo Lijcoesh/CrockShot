@@ -1,38 +1,34 @@
 import type { PaletteOptions } from '@mui/material/styles';
 
 import {
-    accent,
-    black,
-    darkAccent,
-    darkGrey,
     error,
-    lightAccent,
-    lightGrey,
-    offWhite,
-    success,
-    warning,
-    white,
+    greenHover,
+    ink,
+    mutedText,
+    vexaroBlack,
+    vexaroCharcoal,
+    vexaroGreen,
+    vexaroWhite,
 } from 'src/colors';
 
 const palette: PaletteOptions = {
+    mode: 'dark',
     primary: {
-        main: accent,
-        light: lightAccent,
-        dark: darkAccent,
-        contrastText: white,
+        main: vexaroGreen,
+        light: greenHover,
+        dark: vexaroGreen,
+        contrastText: vexaroBlack,
     },
     error: { main: error },
-    warning: { main: warning },
-    success: { main: success },
     background: {
-        default: offWhite,
-        paper: white,
+        default: vexaroBlack,
+        paper: ink,
     },
     text: {
-        primary: black,
-        secondary: darkGrey,
+        primary: vexaroWhite,
+        secondary: mutedText,
     },
-    divider: lightGrey,
+    divider: vexaroCharcoal,
 };
 
 export default palette;

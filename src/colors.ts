@@ -1,16 +1,17 @@
-// Kleurconstanten. Componenten importeren hiervandaan, nooit hardcoded hex.
+// Kleurconstanten (Vexaro Brand Bible). Componenten importeren hiervandaan, nooit hardcoded hex.
 
-export const accent = '#2f6feb';
-export const lightAccent = '#e8f0fe';
-export const darkAccent = '#1b4bb8';
+// Merkkleuren
+export const vexaroBlack = '#151515';
+export const vexaroWhite = '#F5F5F2';
+export const vexaroCharcoal = '#414141';
+export const vexaroGreen = '#0FA958';
 
-export const black = '#101418';
-export const darkGrey = '#4a5361';
-export const grey = '#8b95a3';
-export const lightGrey = '#e3e7ec';
-export const offWhite = '#f7f8fa';
-export const white = '#ffffff';
+// Afgeleid: lichter groen voor hover (zwarte tekst blijft > 4.5:1)
+export const greenHover = '#2EC174';
 
-export const error = '#d1343b';
-export const warning = '#c77700';
-export const success = '#2e7d4f';
+// Afgeleid: grijswaarden tussen zwart en off-white
+export const ink = '#1E1E1E'; // vlak net boven het zwart
+export const hairline = '#2E2E2E'; // fijne lijnen op zwart
+export const mutedText = '#B4B4AE'; // secundaire tekst op zwart (9:1)
+
+export const error = '#FF7A6B'; // foutmeldingen op zwart (7:1)

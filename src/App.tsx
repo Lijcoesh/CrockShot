@@ -1,5 +1,5 @@
-import { Typography } from '@mui/material';
+import ProductPage from 'src/Modules/Product/Scenes/ProductPage/ProductPage';
 
 export default function App() {
-    return <Typography>Hallo ik ben Luca</Typography>;
+    return <ProductPage />;
 }

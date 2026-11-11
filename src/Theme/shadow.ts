@@ -4,7 +4,7 @@
 import { alpha } from '@mui/material/styles';
 import type { Shadows } from '@mui/material/styles';
 
-import { black } from 'src/colors';
+import { vexaroBlack as black } from 'src/colors';
 
 export const softShadow = `0 1px 2px ${alpha(black, 0.06)}`;
 export const mediumShadow = `0 4px 12px ${alpha(black, 0.08)}`;

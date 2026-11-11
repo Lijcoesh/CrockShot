@@ -12,7 +12,7 @@ const useStyles = makeStyles()(theme => ({
         padding: theme.spacing(1.5, 2),
         backgroundColor: vexaroGreen,
         color: vexaroBlack,
-        fontWeight: 600,
+        fontWeight: 500,
         textDecoration: 'none',
         '&:focus': { top: theme.spacing(2) },
     },

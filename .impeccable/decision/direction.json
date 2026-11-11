@@ -1,0 +1,147 @@
+{
+  "title": "Kies de visuele richting voor CrockShot",
+  "question": "De roll koos 'Het scorebord'. Houden, een alternatief nemen, of opnieuw rollen. Alle kaarten blijven binnen de Vexaro-huisstijl (zwart, off-white, charcoal, groen; Montserrat + Inter).",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Het scorebord",
+      "kicker": "THE ROLL",
+      "lineage": "het turfbord van een huisfeest en de krijtlijst van een dartscafé",
+      "thesis": "De pagina is de scorelijst van een avond CrockShot: rondes, acht tanden, één beet.",
+      "palette": ["#151515", "#F5F5F2", "#414141", "#0FA958"],
+      "materials": ["mat zwart bord", "strakke rasterlijnen", "turfstrepen in groen"],
+      "viewport": "Links groot CROCKSHOT met de krokodil; daaronder een speelbare rij van acht genummerde tanden als scorekolommen, met de wachtlijst-knop direct ernaast.",
+      "risk": "Leunt op het speelbare scorebord; zonder strak raster wordt het een kladblok.",
+      "raised": [
+        { "from": "challenger-chromatophore", "raise": "Elke tand heeft drie leesbare toestanden (veilig, ingedrukt, gebeten) die ook zonder kleur te onderscheiden zijn." },
+        { "from": "challenger-cloud-edge", "raise": "Groen alleen op randen en markeringen; het tekstveld blijft zwart-wit, zodat de 5%-regel echt standhoudt." },
+        { "from": "challenger-one-bit", "raise": "Indrukken keert de tand om (wit wordt zwart): staat zichtbaar door vorm, niet door gloed." },
+        { "from": "challenger-event-display", "raise": "Eén ronde tegelijk: het scorebord toont altijd precies één lopende ronde, de rest is geschiedenis." },
+        { "from": "challenger-installer", "raise": "De spelregels lopen strikt lineair, stap 1 t/m 4, zonder zijpaden." }
+      ],
+      "wireframe": { "cols": 12, "rows": 10, "regions": [
+        { "label": "VEXARO / wachtlijst", "x": 0, "y": 0, "w": 12, "h": 1 },
+        { "label": "CROCKSHOT kop", "x": 0, "y": 1, "w": 6, "h": 3, "accent": true },
+        { "label": "krokodil", "x": 6, "y": 1, "w": 6, "h": 4 },
+        { "label": "ronde: 8 tanden (speelbaar)", "x": 0, "y": 5, "w": 12, "h": 3, "accent": true },
+        { "label": "turf + wachtlijst", "x": 0, "y": 8, "w": 12, "h": 2 }
+      ] }
+    },
+    {
+      "id": "model-pick",
+      "label": "De gebitskaart",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "tandheelkundige gebitskaart en technische tekening",
+      "thesis": "Acht tanden in een boog, genummerd als een gebitskaart; het mechanisme is de hele pagina.",
+      "palette": ["#151515", "#F5F5F2", "#414141", "#0FA958"],
+      "materials": ["technische maatlijnen", "genummerde tandboog"],
+      "viewport": "Een enorme halve kaakboog van acht genummerde tanden over de volle breedte, CROCKSHOT erin; één tand bijt bij aanraken.",
+      "risk": "Klinisch: zonder humor in de copy voelt het als een tandartsfolder.",
+      "wireframe": { "cols": 12, "rows": 10, "regions": [
+        { "label": "nav", "x": 0, "y": 0, "w": 12, "h": 1 },
+        { "label": "kaakboog 8 tanden", "x": 1, "y": 1, "w": 10, "h": 6, "accent": true },
+        { "label": "kop + CTA", "x": 3, "y": 7, "w": 6, "h": 3 }
+      ] }
+    },
+    {
+      "id": "challenger-sticker-album",
+      "label": "Het plaatjesalbum",
+      "verdict": "competitive",
+      "lineage": "verzamelalbum met genummerde vakjes",
+      "thesis": "Acht genummerde vakjes met spookcontouren; het lege vakje is de tand die bijt.",
+      "palette": ["#151515", "#F5F5F2", "#414141", "#0FA958"],
+      "materials": ["mat albumpapier", "glanzende plaatjes"],
+      "viewport": "Een albumspread met acht tandvakjes; zeven gevuld, één leeg met vraagteken, CTA als 'vul je album aan'.",
+      "case": "Herkenbaar voor de doelgroep (supermarktplaatjes), maar de beet-spanning raakt verdund in het verzamelen.",
+      "risk": "Glijdt naar kinderachtig, precies wat de brand bible uitsluit.",
+      "hero": "https://impeccable.style/worlds/cards/pop-culture-shelf-sticker-album-spread-hero.webp",
+      "wireframe": { "cols": 12, "rows": 10, "regions": [
+        { "label": "albumkop", "x": 0, "y": 0, "w": 12, "h": 2 },
+        { "label": "8 vakjes", "x": 0, "y": 2, "w": 12, "h": 6, "accent": true },
+        { "label": "CTA", "x": 4, "y": 8, "w": 4, "h": 2 }
+      ] }
+    },
+    {
+      "id": "challenger-chromatophore",
+      "label": "Levende huid",
+      "verdict": "declined",
+      "lineage": "inktvishuid als levend display",
+      "palette": ["#efe6d6", "#8a3b22", "#1fb5a0"],
+      "materials": ["pigmentcellen", "shaders"],
+      "thesis": "Krokodillenhuid die signalen toont.",
+      "viewport": "Schubbenhuid vult het scherm en pulseert.",
+      "case": "Botst met het merkpalet en verduistert hoe het spel werkt.",
+      "risk": "Effect boven helderheid.",
+      "kept": "Duidelijke toestanden per element.",
+      "hero": "https://impeccable.style/worlds/cards/reefs-bioluminescent-nocturnal-chromatophore-skin-language-hero.webp"
+    },
+    {
+      "id": "challenger-cloud-edge",
+      "label": "Iriserende wolkrand",
+      "verdict": "declined",
+      "lineage": "lichtbuiging aan een wolkrand",
+      "palette": ["#ffffff", "#6b7280", "#a7f3d0"],
+      "materials": ["witte marges", "spectrale randen"],
+      "thesis": "Kleur alleen op de rand.",
+      "viewport": "Wit veld met dunne kleurranden.",
+      "case": "Te stil en te licht voor een feestspel.",
+      "risk": "Mist alle brutaliteit.",
+      "kept": "Kleur beperkt tot randen.",
+      "hero": "https://impeccable.style/worlds/cards/clouds-storms-auroras-iridescent-cloud-edge-hero.webp"
+    },
+    {
+      "id": "challenger-one-bit",
+      "label": "1-bit desktop",
+      "verdict": "declined",
+      "lineage": "vroege zwart-wit desktop",
+      "palette": ["#000000", "#ffffff"],
+      "materials": ["dither", "pixelchrome"],
+      "thesis": "Vensters en dithers.",
+      "viewport": "Overlappende vensters met de krokodil als icoon.",
+      "case": "Retro-gimmick, niet premium.",
+      "risk": "Nostalgie in plaats van product.",
+      "kept": "Indrukken keert om.",
+      "hero": "https://impeccable.style/worlds/cards/medium-native-one-bit-desktop-hero.webp"
+    },
+    {
+      "id": "challenger-event-display",
+      "label": "Deeltjesdetector",
+      "verdict": "declined",
+      "lineage": "botsingsweergave uit een versneller",
+      "palette": ["#05070a", "#4a6a8a", "#f5d300", "#e03a2f"],
+      "materials": ["concentrische ringen", "sporen"],
+      "thesis": "De beet als botsing.",
+      "viewport": "Ringen rond de kaak met sporen.",
+      "case": "Doelgroep herkent het niet; uitleg wordt abstract.",
+      "risk": "Wetenschapskostuum.",
+      "kept": "Eén gebeurtenis tegelijk.",
+      "hero": "https://impeccable.style/worlds/cards/scientific-notation-particle-detector-event-display-hero.webp"
+    },
+    {
+      "id": "challenger-installer",
+      "label": "Shareware-installer",
+      "verdict": "declined",
+      "lineage": "installatiewizard uit de jaren 90",
+      "palette": ["#c0c0c0", "#000080", "#ffffff"],
+      "materials": ["bevels", "blokvoortgang"],
+      "thesis": "Spelregels als wizard.",
+      "viewport": "Grijs dialoogvenster met volgende-knop.",
+      "case": "Grap die het merk ondermijnt.",
+      "risk": "Goedkoop in plaats van premium.",
+      "kept": "Strikt lineaire stappen.",
+      "hero": "https://impeccable.style/worlds/cards/digital-design-canon-shareware-installer-screens-hero.webp"
+    }
+  ],
+  "reroll": { "registers": ["safer", "bolder"] },
+  "buildPath": { "value": "code" },
+  "canon": true,
+  "canonCard": {
+    "label": "De categoriestandaard",
+    "thesis": "Donkere productpagina: groot productbeeld, kop, knop, drie stappen, FAQ.",
+    "palette": ["#151515", "#F5F5F2", "#0FA958"],
+    "materials": ["productfoto", "schoon raster"],
+    "viewport": "Kop en knop links, krokodil rechts, stappenrij eronder.",
+    "risk": "Inwisselbaar met elke andere partygame-site."
+  },
+  "steer": true
+}

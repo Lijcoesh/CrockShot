@@ -33,7 +33,7 @@ const useStyles = makeStyles()(theme => ({
     },
     senderName: {
         color: vexaroWhite,
-        fontWeight: 600,
+        fontWeight: 500,
     },
     nav: {
         display: 'flex',

@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-11T12:00:00Z",
+  "title": "Design System: CrockShot",
+  "extensions": {
+    "colorMeta": {
+      "vexaro-green": { "role": "primary", "displayName": "Vexaro Green", "canonical": "#0FA958", "tonalRamp": ["#04301A", "#075128", "#0A7239", "#0FA958", "#2EC174", "#62D495", "#9BE5BA", "#D4F5E1"] },
+      "green-hover": { "role": "primary", "displayName": "Green Hover", "canonical": "#2EC174", "tonalRamp": ["#0B3A22", "#125A35", "#1A7C49", "#239E5E", "#2EC174", "#5FD293", "#97E2B7", "#D0F3DE"] },
+      "vexaro-black": { "role": "neutral", "displayName": "Vexaro Black", "canonical": "#151515", "tonalRamp": ["#0A0A0A", "#151515", "#1E1E1E", "#2E2E2E", "#414141", "#6E6E6B", "#B4B4AE", "#F5F5F2"] },
+      "vexaro-white": { "role": "neutral", "displayName": "Vexaro White", "canonical": "#F5F5F2", "tonalRamp": ["#262624", "#45453F", "#66665F", "#8A8A83", "#B4B4AE", "#D4D4CF", "#E8E8E4", "#F5F5F2"] },
+      "vexaro-charcoal": { "role": "neutral", "displayName": "Vexaro Charcoal", "canonical": "#414141", "tonalRamp": ["#151515", "#1E1E1E", "#2E2E2E", "#414141", "#5A5A5A", "#7A7A7A", "#A3A3A3", "#D6D6D6"] },
+      "ink": { "role": "neutral", "displayName": "Ink", "canonical": "#1E1E1E", "tonalRamp": ["#0F0F0F", "#151515", "#1E1E1E", "#2A2A2A", "#3A3A3A", "#5A5A5A", "#8A8A8A", "#C8C8C8"] },
+      "hairline": { "role": "neutral", "displayName": "Hairline", "canonical": "#2E2E2E", "tonalRamp": ["#151515", "#1E1E1E", "#2E2E2E", "#414141", "#575757", "#757575", "#A0A0A0", "#D2D2D2"] },
+      "muted-text": { "role": "neutral", "displayName": "Muted Text", "canonical": "#B4B4AE", "tonalRamp": ["#2E2E2B", "#4A4A46", "#686863", "#8A8A84", "#B4B4AE", "#CACAC5", "#DFDFDB", "#F1F1EE"] },
+      "error": { "role": "error", "displayName": "Signal Coral", "canonical": "#FF7A6B", "tonalRamp": ["#4A120B", "#7A2116", "#A83325", "#D9503F", "#FF7A6B", "#FF9C90", "#FFC0B8", "#FFE3DF"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Alleen de productnaam CROCKSHOT, hoofdletters, volle breedte (in de hero 15.5cqi)." },
+      "headline": { "displayName": "Headline", "purpose": "Sectiekoppen, tagline en slotkop; text-wrap balance." },
+      "title": { "displayName": "Title", "purpose": "Onderdeel-, stap- en dialoogkopjes." },
+      "body": { "displayName": "Body", "purpose": "Lopende tekst, 48-60ch, tabulaire cijfers." },
+      "body-small": { "displayName": "Body small", "purpose": "Toelichtingen, rondeteller, afzenderregel, bijschrift." },
+      "label": { "displayName": "Label", "purpose": "Knoppen: Montserrat Bold-hoofdletters, 0.04em tracking." },
+      "numeral": { "displayName": "Numeral", "purpose": "Kale indexcijfers voor stappen, onderdelen en de maatlijn." }
+    },
+    "shadows": [],
+    "motion": [
+      { "name": "bite-close", "value": "130ms cubic-bezier(0.6, 0, 0.9, 0.4)", "purpose": "Bovenkaak klapt dicht bij de actieve tand." },
+      { "name": "jaw-open", "value": "450ms cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Bovenkaak opent weer bij een nieuwe ronde." },
+      { "name": "bite-shake", "value": "220ms ease-out, 120ms delay", "purpose": "Korte schok van de boog na de beet; vervalt bij reduced motion." },
+      { "name": "state", "value": "120ms ease-out", "purpose": "Knop-hover, tandvulling, active-zak." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "600px" },
+      { "name": "md", "value": "900px" },
+      { "name": "lg", "value": "1200px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary-large",
+      "description": "Groene actieknop met zwarte tekst; de enige groene knop op de pagina.",
+      "html": "<button class=\"ds-btn-primary\">Zet me op de wachtlijst</button>",
+      "css": ".ds-btn-primary { background: #0FA958; color: #151515; font-family: Montserrat, 'Inter Variable', system-ui, sans-serif; font-weight: 700; font-size: 0.9375rem; text-transform: uppercase; letter-spacing: 0.04em; padding: 16px 28px; min-height: 56px; border: none; border-radius: 0; cursor: pointer; transition: background-color 120ms ease-out, transform 120ms ease-out; } .ds-btn-primary:hover { background: #2EC174; } .ds-btn-primary:active { transform: translateY(1px); } .ds-btn-primary:focus-visible { outline: 2px solid #0FA958; outline-offset: 3px; } .ds-btn-primary:disabled { background: #414141; color: #F5F5F2; }"
+    },
+    {
+      "name": "Outlined Button",
+      "kind": "button",
+      "refersTo": "button-outlined",
+      "description": "Secundaire knop op zwart, voor de reset van de ronde.",
+      "html": "<button class=\"ds-btn-outlined\">Zet hem weer op spanning</button>",
+      "css": ".ds-btn-outlined { background: #151515; color: #F5F5F2; font-family: Montserrat, 'Inter Variable', system-ui, sans-serif; font-weight: 700; font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.04em; padding: 11px 23px; border: 1px solid rgba(245,245,242,0.5); border-radius: 0; cursor: pointer; transition: background-color 120ms ease-out, border-color 120ms ease-out; } .ds-btn-outlined:hover { border-color: #F5F5F2; background: rgba(245,245,242,0.08); } .ds-btn-outlined:focus-visible { outline: 2px solid #0FA958; outline-offset: 3px; }"
+    },
+    {
+      "name": "Email Field",
+      "kind": "input",
+      "refersTo": "input-outlined",
+      "description": "Outlined invoerveld op zwart, charcoal rand, groene focusrand.",
+      "html": "<label class=\"ds-field\"><span class=\"ds-field-label\">E-mailadres</span><input class=\"ds-field-input\" type=\"email\" placeholder=\"jij@voorbeeld.nl\"></label>",
+      "css": ".ds-field { display: flex; flex-direction: column; gap: 6px; font-family: 'Inter Variable', system-ui, sans-serif; } .ds-field-label { color: #B4B4AE; font-size: 0.875rem; } .ds-field:focus-within .ds-field-label { color: #F5F5F2; } .ds-field-input { background: #151515; color: #F5F5F2; caret-color: #0FA958; font: inherit; font-size: 1rem; padding: 16px; border: 1px solid #414141; border-radius: 0; outline: none; } .ds-field-input::placeholder { color: #B4B4AE; opacity: 1; } .ds-field-input:hover { border-color: #B4B4AE; } .ds-field-input:focus { border: 2px solid #0FA958; padding: 15px; }"
+    },
+    {
+      "name": "Top Bar",
+      "kind": "nav",
+      "description": "Afzenderregel links, ankerlinks rechts; onderstreping alleen op hover.",
+      "html": "<header class=\"ds-bar\"><span class=\"ds-bar-sender\"><strong>Vexaro</strong> · Play Different.</span><nav class=\"ds-bar-nav\"><a href=\"#\">Zo speel je het</a><a href=\"#\">Wachtlijst</a></nav></header>",
+      "css": ".ds-bar { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding: 20px 0; background: #151515; font-family: 'Inter Variable', system-ui, sans-serif; } .ds-bar-sender { color: #B4B4AE; font-size: 0.9375rem; font-weight: 500; } .ds-bar-sender strong { color: #F5F5F2; font-weight: 600; } .ds-bar-nav { display: flex; gap: 24px; } .ds-bar-nav a { color: #F5F5F2; font-weight: 500; font-size: 0.9375rem; text-decoration: none; text-underline-offset: 0.2em; } .ds-bar-nav a:hover { text-decoration: underline; } .ds-bar-nav a:focus-visible { outline: 2px solid #0FA958; outline-offset: 3px; }"
+    },
+    {
+      "name": "Numbered Step",
+      "kind": "custom",
+      "description": "Spelregelstap: charcoal bovenlijn met tick-mark, groot kaal cijfer, h3 en muted body. De beet-stap is groen.",
+      "html": "<ol class=\"ds-steps\"><li class=\"ds-step\"><span class=\"ds-step-n\">2</span><h3>Tand indrukken</h3><p>Druk om de beurt één tand in.</p></li><li class=\"ds-step ds-step-bite\"><span class=\"ds-step-n\">3</span><h3>Beet</h3><p>De bovenkaak klapt dicht. Jij drinkt.</p></li></ol>",
+      "css": ".ds-steps { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; margin: 0; padding: 0; list-style: none; background: #151515; } .ds-step { position: relative; padding-top: 24px; border-top: 1px solid #414141; } .ds-step::before { content: ''; position: absolute; top: -6px; left: 0; width: 1px; height: 11px; background: #F5F5F2; } .ds-step-n { display: block; font-family: Montserrat, sans-serif; font-weight: 700; font-size: 3rem; line-height: 1; color: #F5F5F2; margin-bottom: 16px; } .ds-step h3 { font-family: Montserrat, sans-serif; font-weight: 700; font-size: 1.25rem; line-height: 1.2; color: #F5F5F2; margin: 0 0 8px; } .ds-step p { font-family: 'Inter Variable', system-ui, sans-serif; font-size: 1.0625rem; line-height: 1.6; color: #B4B4AE; margin: 0; } .ds-step-bite { border-top-color: #0FA958; } .ds-step-bite::before { background: #0FA958; } .ds-step-bite .ds-step-n { color: #0FA958; }"
+    },
+    {
+      "name": "Tooth Ruler",
+      "kind": "custom",
+      "description": "Signature: indrukbare tanden boven een charcoal maatlijn met tick-marks en kale cijfers; ingedrukt keert om naar zwart, de beet wordt groen.",
+      "html": "<div class=\"ds-teeth\"><button class=\"ds-tooth\" aria-label=\"Tand 1\"><svg viewBox=\"0 0 60 120\" preserveAspectRatio=\"none\"><path d=\"M2 120 C 4 78, 18 30, 30 2 C 42 30, 56 78, 58 120 Z\"/></svg><span>1</span></button><button class=\"ds-tooth ds-tooth-pressed\" aria-label=\"Tand 2\" aria-pressed=\"true\"><svg viewBox=\"0 0 60 120\" preserveAspectRatio=\"none\"><path d=\"M2 120 C 4 78, 18 30, 30 2 C 42 30, 56 78, 58 120 Z\"/></svg><span>2</span></button><button class=\"ds-tooth ds-tooth-bitten\" aria-label=\"Tand 3\" aria-pressed=\"true\"><svg viewBox=\"0 0 60 120\" preserveAspectRatio=\"none\"><path d=\"M2 120 C 4 78, 18 30, 30 2 C 42 30, 56 78, 58 120 Z\"/></svg><span>3</span></button></div>",
+      "css": ".ds-teeth { display: flex; gap: 24px; padding: 16px 24px 0; background: #151515; border-bottom: 1.5px solid #414141; } .ds-tooth { display: flex; flex-direction: column; align-items: center; gap: 10px; background: none; border: none; padding: 0; cursor: pointer; } .ds-tooth svg { width: 44px; height: 88px; overflow: visible; transition: transform 140ms ease-out; } .ds-tooth path { fill: #F5F5F2; stroke: #F5F5F2; stroke-width: 2; vector-effect: non-scaling-stroke; transition: fill 120ms ease-out; } .ds-tooth span { font-family: Montserrat, sans-serif; font-weight: 700; font-size: 1.1rem; color: #B4B4AE; padding-top: 8px; border-top: 1px solid #414141; } .ds-tooth:hover svg { transform: translateY(-5%); } .ds-tooth:focus-visible { outline: none; } .ds-tooth:focus-visible path { stroke: #0FA958; stroke-width: 4; } .ds-tooth-pressed svg { transform: translateY(22%); } .ds-tooth-pressed path { fill: #151515; } .ds-tooth-bitten path { fill: #0FA958; stroke: #0FA958; } .ds-tooth-bitten span { color: #0FA958; }"
+    },
+    {
+      "name": "Privacy Dialog",
+      "kind": "card",
+      "refersTo": "dialog",
+      "description": "Het enige verhoogde vlak: ink met charcoal rand, rechte hoeken, geen schaduw.",
+      "html": "<div class=\"ds-dialog\"><h2>Privacyverklaring</h2><h3>Wat we bewaren</h3><p>Alleen je e-mailadres.</p></div>",
+      "css": ".ds-dialog { background: #1E1E1E; color: #F5F5F2; border: 1px solid #414141; border-radius: 0; padding: 24px; max-width: 480px; font-family: 'Inter Variable', system-ui, sans-serif; } .ds-dialog h2 { font-family: Montserrat, sans-serif; font-weight: 700; font-size: 1.5rem; margin: 0 0 20px; } .ds-dialog h3 { font-family: Montserrat, sans-serif; font-weight: 700; font-size: 1.25rem; margin: 0 0 4px; } .ds-dialog p { margin: 0; line-height: 1.6; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "De gebitskaart",
+    "overview": "CrockShot is getekend als een technische tekening op mat zwart: een kaakboog van acht genummerde tanden, charcoal maatlijnen met tick-marks en kale tabulaire cijfers. Het mechanisme is het verhaal, dus het systeem toont het mechanisme en verder niets. Alles staat op Vexaro Black; off-white draagt tanden en tekst, charcoal draagt structuur, en groen verschijnt alleen waar iets bijt of waar je iets doet.\n\nDe basis is premium rust: rechte hoeken, één kolom van maximaal 1200px, ruime secties gescheiden door een enkele haarlijn. De brutaliteit zit in de details: een display-kop in Montserrat Bold-hoofdletters die de volle breedte vult, een speelbare tand die de bovenkaak laat dichtklappen, een beet die groen kleurt. Beweging is één moment, de beet; de rest staat stil.\n\nBevestigde afwijzingen (uit het richtingscontract): geen gloed, geen glas, geen afgeronde hoeken, geen split hero met productfoto, geen rij van drie stapkaarten.",
+    "keyCharacteristics": [
+      "Donker vlak (Vexaro Black) met off-white tekst en charcoal haarlijnen.",
+      "Groen als accent op hooguit 5% van het scherm: actieve markering, primaire knop, beet.",
+      "Montserrat Bold voor display, koppen, cijfers en knoppen; Inter voor lopende tekst.",
+      "Rechte hoeken overal (0px).",
+      "Structuur via 1px charcoal lijnen en tick-marks, niet via kaarten of schaduw.",
+      "Kale cijfers 1–8 en 1–4 in Montserrat Bold als indexen, zonder prefix."
+    ],
+    "rules": [
+      { "name": "The Vijf Procent Rule", "body": "Groen staat alleen op wat bijt of wat je bedient: de actieve markering, de primaire knop en de beet. Nooit als vlak, nooit als decoratie, nooit voor kleine tekst op charcoal.", "section": "colors" },
+      { "name": "The Omkeer Rule", "body": "Toestand toont zich door omkeren van wit naar zwart, niet door kleur of gloed; groen is gereserveerd voor de beet zelf.", "section": "colors" },
+      { "name": "The Kale Cijfers Rule", "body": "Nummers zijn het ornament: Montserrat Bold, tabulair, zonder \"T\" of \"Stap\" ervoor. Body staat op `tabular-nums`.", "section": "typography" },
+      { "name": "The Hoofdletters Alleen Groot Rule", "body": "Hoofdletters zijn voor display, de slotkop en knoppen; lopende tekst en kleine labels blijven in zinsnaam.", "section": "typography" },
+      { "name": "The Geen Gloed Rule", "body": "Geen gloed, geen glas, geen blur. Wat los moet staan krijgt een haarlijn, geen schaduw.", "section": "elevation" },
+      { "name": "The Maatlijn Rule", "body": "Scheiding gebeurt met een 1px charcoal lijn bovenaan, eventueel met een tick-mark, nooit met een kaart, achtergrondvlak of afgeronde rand.", "section": "shapes" }
+    ],
+    "dos": [
+      "Do zet alles op Vexaro Black en gebruik off-white voor tekst en tanden, muted-text voor secundaire tekst.",
+      "Do houd groen bij de primaire knop, de actieve markering en de beet; groene knoppen krijgen zwarte tekst.",
+      "Do scheid secties en lijstitems met een 1px charcoal bovenlijn, eventueel met tick-mark.",
+      "Do houd alle hoeken recht (0px).",
+      "Do zet cijfers kaal in Montserrat Bold, zonder prefix.",
+      "Do beperk beweging tot het beet-moment en respecteer `prefers-reduced-motion`.",
+      "Do importeer kleuren uit `src/colors.ts` en maten uit `src/Theme/sizes.ts`."
+    ],
+    "donts": [
+      "Don't gebruik gloed, glas, blur of zachte schaduwen als diepte.",
+      "Don't gebruik groen als vlak, decoratie of voor kleine tekst op charcoal.",
+      "Don't zet een eyebrow, overline of kicker boven een kop.",
+      "Don't bouw het Vexaro-logo na in een ander lettertype.",
+      "Don't gebruik kaarten met achtergrondvlak of afgeronde hoeken om inhoud te groeperen.",
+      "Don't zet een \"T\" of ander prefix voor tandnummers."
+    ]
+  }
+}

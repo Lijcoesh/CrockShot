@@ -1,0 +1,10 @@
+dist
+dist-ssr
+node_modules
+package-lock.json
+*.md
+
+# Impeccable: code van de skill zelf, niet herformatteren (bijwerken gaat via de installer)
+.claude/skills
+.github/skills
+.github/hooks
